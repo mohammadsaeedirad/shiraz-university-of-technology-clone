@@ -57,7 +57,7 @@ const Skills = () => {
                   </div>
                 </div>
                 <Link href="/">
-                  <a className="p-2 my-2 text-xs font-medium text-[#041a65] w-fit rounded-xl bg-[#f7dbab] " >اطلاعات بیشتر</a>
+                  <a className="p-2 my-2 text-xs font-medium text-[#041a65] w-fit rounded-xl bg-[#f7dbab]" >اطلاعات بیشتر</a>
                   </Link>
                 </div>
             )
