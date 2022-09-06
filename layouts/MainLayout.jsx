@@ -7,6 +7,7 @@ import {useRouter} from "next/router";
 
  const MainLayout = ({ children }) => {
       const router = useRouter();
+      const noAccess=["/login","/","/employer-sign-up","/employee-sign-up"]
   return (
     <>
     <Head>
@@ -15,7 +16,7 @@ import {useRouter} from "next/router";
       <meta name='description' content='description' />
       <meta charSet='utf-8' />      
     </Head>
-    <Navbar/>
+    {noAccess.includes(router.pathname) ? "" : <Navbar/>}
       <main className='w-full'>{children}</main>
     <Footer/>
     </>

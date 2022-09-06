@@ -39,7 +39,7 @@ const Skills = () => {
         <p className="font-medium text-[#ce8913] mb-3" >مهارت های داغ </p>
         {skills.length > 0 && skills.map((skill,index)=>{
             return(
-                <div className="flex flex-col my-2" key={index} >
+                <div className="flex flex-col my-4" key={index} >
                 <div className='flex flex-row items-center' >
                 <div className='w-[35px] h-[35px] relative ml-4' >   
                   <Image
@@ -56,9 +56,6 @@ const Skills = () => {
                   <p className="" >موقعیت شغلی :{skill.jobs}</p>
                   </div>
                 </div>
-                <Link href="/">
-                  <a className="p-2 my-2 text-xs font-medium text-[#041a65] w-fit rounded-xl bg-[#f7dbab]" >اطلاعات بیشتر</a>
-                  </Link>
                 </div>
             )
 

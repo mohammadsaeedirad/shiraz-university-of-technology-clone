@@ -17,7 +17,18 @@ const Navbar = () => {
     <div className='sticky bg-white top-0 left-0 right-0 w-full z-50 shadow-lg py-2'>
       <div className='container mx-auto text-[#666666] text-sm font-semibold flex justify-between flex-row items-center px-5'>
          <div className='w-96'>
-          <ul className='flex flex-row justify-between'>
+          <ul className='flex flex-row justify-between items-center'>
+            <Link href="/" >
+            <a className='w-[40px] h-[48px] relative' >   
+                  <Image
+                    src='/sutech.png'
+                    alt='our goals'
+                    layout='fill'
+                    objectFit='cover'
+                    quality={100}
+                  />         
+            </a>
+            </Link> 
           <li>
             <Link href="/" >
             <a>   
@@ -60,17 +71,6 @@ const Navbar = () => {
                   />         
             </a>
             </Link>
-            <Link href="/" >
-            <a className='w-[47px] h-[55px] relative' >   
-                  <Image
-                    src='/sutech.png'
-                    alt='our goals'
-                    layout='fill'
-                    objectFit='cover'
-                    quality={100}
-                  />         
-            </a>
-            </Link> 
          </div>
       </div>
 

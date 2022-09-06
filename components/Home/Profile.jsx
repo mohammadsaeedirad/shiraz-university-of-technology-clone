@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Skills from './Skills';
 const Profile = () => {
   return (
-    <div className='sticky top-20 flex flex-col shadow-lg h-full w-full border-gray-300 border rounded-lg  font-medium' >
+    <div className='sticky top-20 flex flex-col shadow-lg h-fit w-full border-gray-300 border rounded-lg  font-medium' >
         <div className='w-[100%] h-[267px] relative' >   
                   <Image
                     src='/uni-background.png'
