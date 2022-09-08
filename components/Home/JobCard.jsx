@@ -56,7 +56,7 @@ const JobCaed = ({job,key}) => {
             })}
         </ul>
         <div className="flex flex-row justify-end" >
-            <Link href="/" >
+            <Link href={`/home/${job.Url}`} >
             <a className="rounded p-4 text-white text-xs bg-[#0870cb]" >
             مشاهده اطلاعات کامل
             </a>

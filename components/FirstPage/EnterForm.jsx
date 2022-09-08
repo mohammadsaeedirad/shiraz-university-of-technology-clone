@@ -8,10 +8,22 @@ const EnterForm = () => {
     دانشگاه صنعتی شیراز 
     خوش آمدید
     </h1>
-    <div> 
-        <div className="shadow-xl p-4 w-full mb-4 text-center cursor-pointer">ورود به سامانه</div>
-        <div className="shadow-xl p-4 w-full mb-4 text-center cursor-pointer"> ثبت نام به عنوان کارفرما  </div>
-        <div className="shadow-xl p-4 w-full mb-4 text-center cursor-pointer">ثبت نام به عنوان کارجو</div>
+    <div className="flex flex-col" > 
+        <Link href="/login" >
+          <a className="shadow-xl p-4 w-full mb-4 text-center cursor-pointer">
+          ورود به سامانه  
+          </a>
+        </Link>
+        <Link href="/employer-sign-up" >
+          <a className="shadow-xl p-4 w-full mb-4 text-center cursor-pointer">
+          ثبت نام به عنوان کارفرما 
+          </a>
+        </Link>
+        <Link href="/employee-sign-up" >
+          <a className="shadow-xl p-4 w-full mb-4 text-center cursor-pointer">
+          ثبت نام به عنوان کارجو         
+          </a>
+        </Link>
     </div>
     </div>
 

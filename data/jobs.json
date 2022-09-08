@@ -3,11 +3,23 @@
       "title": "توسعه دهنده اندروید",
       "type":"دورکاری",
       "duration":"از شنبه تا چهارشنبه",
-      "Url":"https://hamrahfelez.org",
+      "Url":"توسعه-دهنده-اندروید",
       "employer": "کارفرما: دکتر پیروز شمسی نژاد",
       "count":"دو",
+      "date":"1401/04/12",
       "salary":"توافقی",
       "image": "/android.png",
+      "langs": [
+        {
+            "title": "android studio"
+        },
+        {
+            "title": "java"
+        },
+        {
+            "title": "kotlin"
+        }
+      ] ,
       "skills": [
         {
             "title": "حداقل یک سال سابقه تحصیلی"
@@ -24,11 +36,23 @@
         "title": "کارشناس پایگاه داده",
         "type":"تمام وقت",
         "duration":"از شنبه تا چهارشنبه",
-        "Url":"https://hamrahfelez.org",
+        "Url":"کارشناس-پایگاه-داده",
         "employer": "کارفرما : دکتر محمد صادق رضایی",
         "count":"یک",
+        "date":"1401/01/11",
         "salary":"از ۵ میلیون تومان",
         "image": "/sql.png",
+        "langs": [
+          {
+              "title": "sql"
+          },
+          {
+              "title": "algorithms"
+          },
+          {
+              "title": "redis"
+          }
+        ] ,
         "skills": [
           {
                 "title": "حداقل دو سال سابقه کاری"
@@ -45,11 +69,23 @@
         "title": "توسعه دهنده اندروید",
         "type":"دورکاری",
         "duration":"از شنبه تا چهارشنبه",
-        "Url":"https://hamrahfelez.org",
+        "Url":"توسعه-دهنده-اندروید",
         "employer": "کارفرما: دکتر پیروز شمسی نژاد",
         "count":"دو",
+        "date":"1401/04/12",
         "salary":"توافقی",
         "image": "/android.png",
+        "langs": [
+          {
+              "title": "android studio"
+          },
+          {
+              "title": "java"
+          },
+          {
+              "title": "kotlin"
+          }
+        ] ,
         "skills": [
           {
                 "title": "حداقل یک سال سابقه تحصیلی"
@@ -66,11 +102,23 @@
         "title": "کارشناس پایگاه داده",
         "type":"دورکاری",
         "duration":"از شنبه تا چهارشنبه",
-        "Url":"https://hamrahfelez.org",
+        "Url":"کارشناس-پایگاه-داده",
         "employer": "کارفرما : دکتر محمد صادق رضایی",
         "count":"سه",
+        "date":"1401/01/11",
         "salary":"از ۵ میلیون تومان",
         "image": "/sql.png",
+        "langs": [
+          {
+              "title": "sql"
+          },
+          {
+              "title": "algorithms"
+          },
+          {
+              "title": "redis"
+          }
+        ] ,
         "skills": [
           {
                 "title": "حداقل دو سال سابقه کاری"

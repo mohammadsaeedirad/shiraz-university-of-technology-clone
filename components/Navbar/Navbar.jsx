@@ -5,6 +5,7 @@ import Image from 'next/image';
 const Navbar = () => {
   const [enableIndex, setEnableIndex] = useState('');
   const [showdrow , setShowdrow] = useState(false);
+  const [openMenu , setOpenMenu] = useState(false);
   const handleToggle = (index) => {
     if(index === enableIndex){
       setEnableIndex(null)
@@ -14,11 +15,11 @@ const Navbar = () => {
   } 
 
   return (
-    <div className='sticky bg-white top-0 left-0 right-0 w-full z-50 shadow-lg py-2'>
+        <div className='sticky bg-white top-0 left-0 right-0 w-full z-50 shadow-lg py-2'>
       <div className='container mx-auto text-[#666666] text-sm font-semibold flex justify-between flex-row items-center px-5'>
-         <div className='w-96'>
+         <div className='w-full sm:w-96'>
           <ul className='flex flex-row justify-between items-center'>
-            <Link href="/" >
+            <Link href="/home" >
             <a className='w-[40px] h-[48px] relative' >   
                   <Image
                     src='/sutech.png'
@@ -29,30 +30,23 @@ const Navbar = () => {
                   />         
             </a>
             </Link> 
-          <li>
-            <Link href="/" >
-            <a>   
-            خانه       
-            </a>
-            </Link>
-            </li>
             <li>
-            <Link href="/" >
-            <a>   
+            <Link href="/home" >
+            <a className='hidden sm:block' >   
              جستجوی مشاغل           
             </a>
             </Link>
             </li>
             <li>
-            <Link href="/" >
-            <a>   
+            <Link href="/courses" >
+            <a className='hidden sm:block'>   
              آموزش ها          
             </a>
             </Link>
             </li>
             <li>
-            <Link href="/" >
-            <a>   
+            <Link href="/home" >
+            <a className='hidden sm:block'>   
             هشدار ها            
             </a>
             </Link>
@@ -60,8 +54,8 @@ const Navbar = () => {
           </ul>
          </div>
          <div className=' flex flex-row justify-end  items-center'>
-         <Link href="/" >
-            <a className='w-[20px] h-[22px] relative mx-4'>   
+         <Link href="/login" >
+            <a className='w-[20px] h-[22px] hidden sm:relative mx-4'>   
                   <Image
                     src='/profile.png'
                     alt='our goals'
@@ -70,11 +64,45 @@ const Navbar = () => {
                     quality={100}
                   />         
             </a>
-            </Link>
+            </Link>         
+            <div onClick={()=>setOpenMenu(!openMenu)} className='w-[20px] h-[22px] relative cursor-pointer sm:hidden mx-4'>   
+                  <Image
+                    src='/burger.png'
+                    alt='our goals'
+                    layout='fill'
+                    objectFit='cover'
+                    quality={100}
+                  />         
+            </div>
          </div>
       </div>
-
+      <ul className={` sm:hidden items-center flex-col space-y-6 text-[#666666] text-sm font-medium ${openMenu ? "flex":"hidden"}`} >
+        <li>
+        <Link href="/home" >
+        <a>   
+        جستجوی مشاغل           
+        </a>
+        </Link>
+        </li>
+        <li>
+        <Link href="/courses" >
+        <a>   
+        آموزش ها          
+        </a>
+        </Link>
+        </li>
+        <li>
+        <Link href="/home" >
+        <a>   
+        هشدار ها            
+        </a>
+        </Link>
+        </li>
+    </ul>
     </div>
+ 
+    
+
   )
 }
 

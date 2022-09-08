@@ -12,12 +12,12 @@ const SignUpForm = () => {
     <div className="shadow-xl p-5" > 
         <input placeholder="نام"  type="text" className=" p-4 w-full mb-4 cursor-pointer focus:outline-none bg-zinc-200 rounded"></input>
         <input placeholder="نام خانوادگی" type="text"  className=" p-4 w-full mb-4 cursor-pointer focus:outline-none bg-zinc-200 rounded"></input>
-        <input placeholder="شماره تلفن همراه" type="number" maxlength="11" className=" p-4 w-full mb-4 cursor-pointer focus:outline-none bg-zinc-200 rounded"></input>
+        <input placeholder="شماره تلفن همراه" type="number" maxLength="11" className=" p-4 w-full mb-4 cursor-pointer focus:outline-none bg-zinc-200 rounded"></input>
         <input placeholder="سایمیل" type="email"  className=" p-4 w-full mb-4 cursor-pointer focus:outline-none bg-zinc-200 rounded"></input>
         <input placeholder="رمز عبور" type="password"  className=" p-4 w-full mb-4 cursor-pointer focus:outline-none bg-zinc-200 rounded"></input>
         <div>
         <p className="mb-2 text-xs font-medium text-[#ce8913]" >{router.pathname == "/employer-sign-up" ? "اگر در دانشگاه صنعتی شیراز تدریس میکنید ":"اگر در دانشگاه صنعتی شیراز تحصیل میکنید "}      </p>
-        <input placeholder={router.pathname == "/employer-sign-up" ? "شماره پرسنلی":"شماره دانشجویی"} type="number" maxlength="11" className=" p-4 w-full mb-4 cursor-pointer focus:outline-none bg-zinc-200 rounded"></input>
+        <input placeholder={router.pathname == "/employer-sign-up" ? "شماره پرسنلی":"شماره دانشجویی"} type="number" maxLength="11" className=" p-4 w-full mb-4 cursor-pointer focus:outline-none bg-zinc-200 rounded"></input>
         </div>
 
         <Link href="/home">
