@@ -70,7 +70,7 @@ const SearchCourses = () => {
                     </div>
                     <div className='flex flex-col md:flex-row my-5 mx-2 justify-between' >
                         {course.courses.map((item,index)=>{
-                          return <CourseCard item={item} index={index}/>
+                          return <CourseCard item={item} key={index}/>
                         })}
                     </div>
                 </div>
