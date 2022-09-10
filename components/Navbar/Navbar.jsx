@@ -32,6 +32,13 @@ const Navbar = () => {
             </Link> 
             <li>
             <Link href="/home" >
+            <a className='hidden sm:block'>   
+             خانه            
+            </a>
+            </Link>
+            </li>
+            <li>
+            <Link href="/home" >
             <a className='hidden sm:block' >   
              جستجوی مشاغل           
             </a>
@@ -44,18 +51,11 @@ const Navbar = () => {
             </a>
             </Link>
             </li>
-            <li>
-            <Link href="/home" >
-            <a className='hidden sm:block'>   
-            هشدار ها            
-            </a>
-            </Link>
-            </li>
           </ul>
          </div>
          <div className=' flex flex-row justify-end  items-center'>
          <Link href="/login" >
-            <a className='w-[20px] h-[22px] hidden sm:relative mx-4'>   
+            <a className='w-[20px] h-[22px] relative mx-4'>   
                   <Image
                     src='/profile.png'
                     alt='our goals'
@@ -79,6 +79,13 @@ const Navbar = () => {
       <ul className={` sm:hidden items-center flex-col space-y-6 text-[#666666] text-sm font-medium ${openMenu ? "flex":"hidden"}`} >
         <li>
         <Link href="/home" >
+        <a className='hidden sm:block'>   
+          خانه            
+        </a>
+        </Link>
+        </li>
+        <li>
+        <Link href="/home" >
         <a>   
         جستجوی مشاغل           
         </a>
@@ -91,13 +98,7 @@ const Navbar = () => {
         </a>
         </Link>
         </li>
-        <li>
-        <Link href="/home" >
-        <a>   
-        هشدار ها            
-        </a>
-        </Link>
-        </li>
+
     </ul>
     </div>
  

@@ -59,7 +59,7 @@ const SearchCourses = () => {
             return(
                 <div className="2xl:px-20 mb-16 shadow-lg p-5" key={index} >
                     <div className="flex flex-row mb-4" >
-                        <p className='font-medium text-zinc-600 text-sm xl:text-lg mx-2' >{course.title}</p>
+                        <p className='font-medium text-zinc-600 text-md xl:text-lg mx-2' >{course.title}</p>
                     </div>
                     <div className="flex flex-row" >
                         {course.langs.map((lang,index)=>{
@@ -68,7 +68,7 @@ const SearchCourses = () => {
                             )
                         })}
                     </div>
-                    <div className='flex flex-row my-5 mx-2 w-full justify-between' >
+                    <div className='flex flex-col md:flex-row my-5 mx-2 justify-between' >
                         {course.courses.map((item,index)=>{
                           return <CourseCard item={item} index={index}/>
                         })}
