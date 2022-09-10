@@ -12,9 +12,13 @@ import {useRouter} from "next/router";
     <>
     <Head>
       <meta name='viewport' content='width=device-width, initial-scale=1' />
-      <title>TEST</title>
+      <title>دانشگاه صنعتی شیراز</title>
       <meta name='description' content='description' />
-      <meta charSet='utf-8' />      
+      <meta charSet='utf-8' />  
+      <link
+        rel='icon'
+        href='/sutech.png'
+      />    
     </Head>
     {noAccess.includes(router.pathname) ? "" : <Navbar/>}
       <main className='w-full'>{children}</main>
