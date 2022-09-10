@@ -1,8 +1,67 @@
 import Image from 'next/image';
 import Skills from './Skills';
 const Profile = () => {
+  const skills =[
+    {
+        title:"پایتون پیشرفته",
+        img:"/python.png",
+        url:"/",
+        jobs:5 ,
+    },
+    {
+        title:"مقدماتی UX و UI مبانی",
+        img:"/UI.png",
+        url:"/",
+        jobs:6 ,
+    },
+    {
+        title:"اندروید",
+        img:"/android.png",
+        url:"",
+        jobs:3 ,
+    },
+    {
+        title:"C++",
+        img:"/c.png",
+        url:"",
+        jobs:2 ,
+    },
+    {
+        title:"Illustrator",
+        img:"/illustrator.png",
+        url:"/",
+        jobs:4 ,
+    },
+  ]
+  const selectedCourses =[
+      {
+        title:"آموزش پیشرفته برنامه نویسی به زبان جاوا",
+        img:"/java-course.png",
+        date:'1399/07/22',
+        duration:"جلسات باقی مانده 3" ,
+        count:"مدت زمان دوره 21 ساعت "
+    },
+    {
+        title:"یادگیری فتوشاپ در 10 جلسه",
+        img:"/ps.png",
+        duration:"تعداد جلسات 10" ,
+        count:"مدت زمان دوره 15 ساعت "
+    },
+    {
+        title:"اصول پیشرفته برنامه نویسی با پایتون",
+        img:"/python-course.png",
+        duration:"تعداد جلسات 12" ,
+        count:"مدت زمان دوره 17 ساعت "
+    },
+    {
+        title:"آموزش دیجیتال مارکتینگ",
+        img:"/marketing.png",
+        duration:"تعداد جلسات 22" ,
+        count:"مدت زمان دوره 23 ساعت "
+    },
+  ]
   return (
-    <div className='sticky top-20 flex flex-col shadow-lg h-fit w-full border-gray-300 border rounded-lg  font-medium' >
+    <div className='sticky top-20 flex flex-col shadow-lg h-fit w-full border-zinc-200 border rounded-lg  font-medium' >
         <div className='w-[100%] h-[267px] relative' >   
                   <Image
                     src='/uni-background.png'
@@ -39,7 +98,7 @@ const Profile = () => {
                 </div>
             </div>      
         </div>
-        <Skills />
+        <Skills   skills={skills} courses={selectedCourses}  />
     </div>
   )
 }

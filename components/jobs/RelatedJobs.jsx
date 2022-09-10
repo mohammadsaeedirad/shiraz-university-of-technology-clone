@@ -9,7 +9,7 @@ const RelatedJobs = () => {
         url:"/",
     },
     {
-        title:"",
+        title:"طراح UI/UX",
         img:"/UI.png",
         employer:"کارفرما : دکتر صادقی",
         url:"/",

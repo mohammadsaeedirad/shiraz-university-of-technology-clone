@@ -10,9 +10,12 @@ const course = (props) => {
         <div className='flex flex-col md:basis-3/5 lg:basis-3/4 p-4' >
         <CourseDescriptions  />
         </div>
-        <div className='flex  md:basis-2/5 lg:basis-1/4 p-4 grow'>
-          <CourseData />
-          <CourseSections />
+        <div className='flex flex-col md:basis-2/5 lg:basis-1/4 p-4 grow'>
+          <div className="sticky top-16" >
+           <CourseData />
+           <CourseSections />
+          </div>
+
         </div>
       </div> 
     
