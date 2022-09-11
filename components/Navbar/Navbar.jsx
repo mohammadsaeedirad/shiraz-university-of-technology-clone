@@ -54,7 +54,7 @@ const Navbar = () => {
           </ul>
          </div>
          <div className=' flex flex-row justify-end  items-center'>
-         <Link href="/login" >
+         <Link href="/" >
             <a className='w-[20px] h-[22px] relative mx-4'>   
                   <Image
                     src='/profile.png'
